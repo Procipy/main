@@ -1,62 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Em Construção</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #222;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
-    }
+   <head>
+      <link href="style.css" rel="stylesheet" />
+      <link href="matrix.css" rel="stylesheet" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Programação Científica em Python</title>
+   </head>
+   <body>
+      <header>
+         <div class="upper-header">
+            <img src="Ufac-brasao.png" alt="Logo UFAC" class="logo-ufac"/>
+            <h1>Programação Científica em Python - ProCiPy</h1>
+         </div>
+         <nav class="header-nav">
+         <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contatos">Contato</a></li>
+         </ul>
+      </header>
+      <section class="hero main-section">
+        <div class="hero-background">
+         <div class="hero-content fade-up">
+            <h1>Transforme sua Carreira com Conhecimento</h1>
+            <p>Participe do nosso Curso de Programação Científica e domine as ferramentas do futuro.</p>
+            <a href="#" class="hero-button">Saiba Mais</a>
+         </div>
+         <canvas id="matrix" class="my-background-box"></canvas>
+         </div>
+      </section>
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #ffcc00;
-    }
+      <section class="sobre main-section">
+      <div class="container fade-up">
+         <section class="titulo-curso">
+            <h2>Sobre o Projeto</h2>
+         </section>
+            <p>Este projeto foi desenvolvido para estudantes e profissionais que desejam dominar ferramentas computacionais aplicadas à ciência e engenharia. Vamos abordar desde os fundamentos da linguagem Python até a modelagem e simulação numérica de sistemas físicos.</p>
 
-    p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo, nunc quis egestas varius, lorem nulla semper nunc, quis sagittis velit enim finibus nisi. Nulla in purus tincidunt, accumsan nulla id, eleifend metus. Aenean diam metus, porttitor sit amet ligula at, fermentum laoreet elit. Sed accumsan imperdiet sem tincidunt viverra. Nulla sagittis sapien sed feugiat maximus. Mauris vel metus molestie, ultricies libero ut, sodales nibh. Pellentesque imperdiet eros non velit luctus eleifend. Praesent luctus, mi nec posuere convallis, magna mi mattis diam, et aliquam elit orci sed dolor. Mauris libero leo, interdum non lobortis suscipit, porttitor ut urna. In sit amet lectus volutpat, faucibus ipsum vitae, volutpat dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis ut mi mi. Nulla venenatis lorem in sollicitudin finibus. Etiam ornare velit a ultrices maximus. Morbi dapibus facilisis rhoncus.</p>
 
-    .loader {
-      border: 8px solid #444;
-      border-top: 8px solid #ffcc00;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1.5s linear infinite;
-      margin-bottom: 20px;
-    }
+            <p>Etiam nec erat id mauris porta ultricies. Aenean quis blandit nulla. Maecenas malesuada vel orci a mattis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla tincidunt orci et lacus dignissim cursus. Sed bibendum hendrerit urna, et malesuada neque facilisis tristique. Suspendisse nec mauris ante. Praesent egestas, libero non hendrerit lacinia, erat nisi pharetra nulla, non blandit lacus sapien ac risus. Donec elementum erat a dui iaculis gravida. Proin imperdiet elit nec dui iaculis euismod. Morbi risus quam, consectetur a convallis quis, tempor fermentum lorem. Integer malesuada, mauris nec scelerisque tempor, lectus neque imperdiet diam, luctus finibus nunc lacus nec justo. Nunc scelerisque, tellus ac mattis lobortis, eros ligula fermentum velit, id aliquet lectus eros non nisl.</p>
 
-    @keyframes spin {
-      0%   { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+            <p>Sed consequat imperdiet varius. Donec orci felis, elementum in fringilla eu, condimentum id lacus. Quisque eleifend dolor at odio rutrum, nec hendrerit metus aliquet. Aliquam lectus arcu, tincidunt non consectetur sed, volutpat quis lorem. Phasellus et quam sagittis, pulvinar augue id, vestibulum ante. In aliquet leo nec tellus commodo, elementum luctus sem ultricies. Proin non iaculis urna. Nulla lobortis vitae libero quis gravida. Duis eleifend, lectus et ultrices faucibus, mauris sapien egestas turpis, ut posuere lorem ex eget nibh. Nulla facilisi. Suspendisse potenti. Phasellus ullamcorper pellentesque mauris, tincidunt iaculis lectus consectetur pellentesque. Suspendisse id tortor in ante aliquet finibus vel nec ipsum. Nullam imperdiet orci quam, sed eleifend ante suscipit eu. Proin scelerisque nibh in aliquam tincidunt. Proin sit amet quam rutrum, pretium mi nec, auctor arcu.</p>
 
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
-  <div class="loader"></div>
-  <h1>🚧 Em Construção 🚧</h1>
-  <p>Estamos trabalhando para trazer algo incrível. Volte em breve!</p>
+      </div>
+      </section>
 
-  <footer>&copy; 2025 - ProciPy</footer>
-</body>
+      <section class="cursos main-section">
+         <div class="container center fade-up">
+         <section class="titulo-curso">
+            <h2>Cursos Oferecidos</h2>
+         </section>
+         <div class="grid">
+            <a class="div_link" href="#">
+               <div class="feature-card">
+                  <div class="feature-icon">🐍</div>
+                  <h3>Python</h3>
+                  <p>
+                     Experience lightning-fast data processing with our
+                     quantum-inspired algorithms that handle complex workflows in
+                     microseconds.
+                  </p>
+               </div>
+            </a>
+            <a class="div_link" href="#">
+               <div class="feature-card">
+                  <div class="feature-icon">⚡</div>
+                  <h3>Neural Networks</h3>
+                  <p>
+                     AI-powered decision making that learns from your team's patterns
+                     and optimizes collaboration in real-time.
+                  </p>
+               </div>
+            </a>
+            <a class="div_link" href="#">
+               <div class="feature-card">
+                  <div class="feature-icon">🌎</div>
+                  <h3>Geofísica</h3>
+                  <p>
+                     Immersive 3D workspace that transcends traditional boundaries,
+                     bringing remote teams into a shared reality.
+                  </p>
+               </div>
+            </a>
+            <a class="div_link" href="#">
+               <div class="feature-card">
+                  <div class="feature-icon">🛡️</div>
+                  <h3>Numpy</h3>
+                  <p>
+                     Military-grade security protocols with quantum encryption that
+                     makes your data literally impossible to breach.
+                  </p>
+               </div>
+            </a>
+            <a class="div_link"href="#">
+               <div class="feature-card">
+                  <div class="feature-icon">🚀</div>
+                  <h3>Scipy</h3>
+                  <p>
+                     Instantaneous synchronization across all devices and platforms
+                     with zero latency, no matter the distance.
+                  </p>
+               </div>
+            </a>
+            <a class="div_link"href="#">
+               <div class="feature-card">
+                  <div class="feature-icon">🎯</div>
+                  <h3>Mind Reading Analytics</h3>
+                  <p>
+                     Predictive analytics so advanced, it anticipates your team's needs
+                     before they even know what they need.
+                  </p>
+               </div>
+            </a>
+
+         </div>
+      </section>
+
+      <section class="contatos main-section">
+         <div class="container fade-up">
+            <section class="titulo-curso">
+               <h2>Contatos</h2>
+            </section>
+            <p><strong>Email:</strong> procipy.ccbn@ufac.br</p>
+            <p><strong>Duração:</strong> 40 horas</p>
+            <p><strong>Modalidade:</strong> Online ao vivo</p>
+            <p><strong>Início:</strong> 15 de Setembro de 2025</p>
+         </div>
+      </section>
+
+      <footer class="main-section">
+         <div class="footer-links">
+            &copy; 2025 ProCiPy - UFAC - procipy.ccbn@ufac.br
+         </div>
+      </footer>
+   </body>
 </html>
+<script src="script.js"></script>
+<script src="matrix.js"></script>
