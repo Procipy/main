@@ -311,3 +311,42 @@ margin-top: 100px;
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+
+
+section {
+    scroll-margin-top: 130px; /* Ajuste a distância */
+}
+
+.em-construcao p {
+    position: relative;
+  }
+
+  .em-construcao p::after {
+    content: "EM CONSTRUÇÃO";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+
+    transform: rotate(-25deg);
+    pointer-events: all;
+    z-index: 999;
+
+    /* Ícone SVG como fundo */
+    background-image: url('build.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+  }
+
+  .em-construcao p > * {
+    pointer-events: none;
+  }
